@@ -1,0 +1,31 @@
+{
+	"name": "vidyeoman",
+	"version": "0.0.1",
+	"license": "ISC",
+	"scripts": {
+		"start": "npx rimraf public && npx parcel source/manifest.json --no-autoinstall --no-hmr --no-source-maps --out-dir public",
+		"build": "npx rimraf dist && npx parcel build source/manifest.json --experimental-scope-hoisting --out-dir dist",
+		"postbuild": ""
+	},
+	"devDependencies": {
+		"@types/chrome": "0.0.92",
+		"@types/node": "^13.5.0",
+		"parcel": "^1.12.4",
+		"parcel-plugin-static-zip": "0.0.7",
+		"parcel-plugin-web-extension": "^1.6.1",
+		"rimraf": "^3.0.0",
+		"typescript": "^3.7.5"
+	},
+	"parcel-plugin-static-zip": {
+		"vidyeoman.zip": {
+			"glob": "**",
+			"options": {
+				"cwd": "../../",
+				"ignore": [
+					"**/node_modules/**",
+					"**/dist/**"
+				]
+			}
+		}
+	}
+}

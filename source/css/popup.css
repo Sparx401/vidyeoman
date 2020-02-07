@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+}
+
+body {
+	background-color: rebeccapurple;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 auto;
+	width: 200px;
+	height: 255px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.app-title {
+	color: white;
+	margin-top: auto;
+	margin-right: auto;
+}
+
+hr {
+	margin: 20px 0;
+	color: white;
+}
+
+button, input {
+	border: none;
+	margin: 0 auto;
+}
+
+button {
+	border: none;
+	padding: 5px 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: #FFC107;
+	cursor: pointer;
+	transition: all 0.25s;
+}
+
+button:hover {
+	background-color: rgb(255, 234, 169);
+}
+
+#vid-playback-submit-btn {
+	margin-top: 5px;
+}
+
+#vid-reset-playback-submit-btn {
+    margin-top: 15px;
+}
+
+output {
+	color: white;
+	font-size: 16px;
+	vertical-align: top;
+	font-weight: bold;
+	width: 30px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.controls {
+	display: block;
+	margin-top: 15px;
+}
+
+.main-flourish {
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    transform: rotate(-55deg) skew(45deg, 10deg);
+    position: absolute;
+    bottom: -33px;
+    left: -60px;
+    z-index: 100;
+}
+
+.small-flourish {
+    width: 400px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(-55deg) skew(30deg, 10deg);
+    position: absolute;
+	bottom: 37px;
+	left: 60px;
+    z-index: 200;
+}

@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"module": "ESNEXT",
+		"target": "ESNEXT",
+		"typeRoots": [ "./node_modules/@types" ],
+		"types": [ "node", "chrome" ],
+		"noImplicitAny": false,
+		"sourceMap": false,
+		"rootDir": "source",
+		"noEmitOnError": true
+	},
+	"include": [
+		"./source/**/*"
+	]
+}

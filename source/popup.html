@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="./css/popup.css">
+
+</head>
+
+<body>
+	<main>
+		<div class="controls">
+			<button id="pop-out-vid-btn">Pop the video out</button>
+
+			<hr>
+
+			<div class="range-input-set">
+				<input
+					id="vid-playback-input"
+					name="vid-playback-input"
+					type="range"
+					min="0.25"
+					max="7"
+					step="0.25"
+					value="1"
+					list="playback-tickmarks" />
+
+				<output id="playbackRate" name="playbackRate" for="vid-playback-input"></output>
+			</div>
+
+			<button id="vid-playback-submit-btn">Set playback speed</button>
+			<button id="vid-reset-playback-submit-btn">Reset speed</button>
+		</div>
+
+		<small class="app-title">|VID|YEOMAN|</small>
+
+		<div class="main-flourish"></div>
+		<div class="small-flourish"></div>
+
+		<datalist id="playback-tickmarks">
+			<option value="0.25" label="0.25x"></option>
+			<option value="3.5" label="3.5x"></option>
+			<option value="7" label="7x"></option>
+		</datalist>
+	  </main>
+
+	<script src="./scripts/popup.ts"></script>
+</body>
+
+</html>

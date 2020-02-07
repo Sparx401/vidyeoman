@@ -1,0 +1,37 @@
+{
+	"manifest_version": 2,
+
+	"name": "VidYeoman",
+	"version": "0.0.1",
+	"description": "Adds playback speed and picture-in-picture control to all videos on the Web.",
+
+	"background": {
+		"scripts": ["scripts/background.ts"],
+		"persistent": false
+	},
+
+	"page_action": {
+		"default_title": "Space-Time powers activate!",
+		"default_popup": "popup.html"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["scripts/playback-rate-vid.ts"]
+		}
+	],
+
+	"web_accessible_resources": [
+		"scripts/pop-vid.js",
+		"scripts/playback-rate-vid.ts"
+	  ],
+
+	"permissions": [
+		"tabs",
+		"activeTab",
+		"<all_urls>",
+		"storage",
+		"declarativeContent"
+	]
+}
