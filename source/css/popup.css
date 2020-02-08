@@ -43,7 +43,7 @@ button {
 	text-transform: uppercase;
 	background-color: #FFC107;
 	cursor: pointer;
-	transition: all 0.25s;
+	transition: background-color 0.25s;
 }
 
 button:hover {

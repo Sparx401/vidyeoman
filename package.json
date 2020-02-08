@@ -4,8 +4,7 @@
 	"license": "ISC",
 	"scripts": {
 		"start": "npx rimraf public && npx parcel source/manifest.json --no-autoinstall --no-hmr --no-source-maps --out-dir public",
-		"build": "npx rimraf dist && npx parcel build source/manifest.json --experimental-scope-hoisting --out-dir dist",
-		"postbuild": ""
+		"build": "npx rimraf dist && npx parcel build source/manifest.json --experimental-scope-hoisting --out-dir dist"
 	},
 	"devDependencies": {
 		"@types/chrome": "0.0.92",
