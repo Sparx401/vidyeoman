@@ -22,6 +22,5 @@ A web browser extension that allows for picture-in-picture and wider ranges of p
 
 - Update playback rate on page action based on the current settings of the video
 - Toggle Picture-in-Picture button based on the state of the video
-- Option to persist playback speed across user-specified domains
 - Clean up and better organize the code
 - Find alternate way to zip up the files when building for distribution; the ParcelJS plugin used here creates a zip file even during development

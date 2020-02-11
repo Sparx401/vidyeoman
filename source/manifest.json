@@ -23,8 +23,7 @@
 	],
 
 	"web_accessible_resources": [
-		"scripts/pop-vid.js",
-		"scripts/playback-rate-vid.ts"
+		"scripts/pop-vid.js"
 	  ],
 
 	"permissions": [
